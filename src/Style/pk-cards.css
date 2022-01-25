@@ -1,0 +1,95 @@
+:root {
+    --text-color:#c5c5c5;
+}
+
+body {
+    font-size: 16px;
+}
+
+.pk-card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+}
+
+.pk-card-parent {
+    background-color: rgb(82, 82, 82);
+    border:1px solid rgb(35, 35, 35);
+}
+
+.pk-cf-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    margin: 0 0.5rem;
+}
+
+.pk-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pk-dim {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color)
+}
+
+.pk-card-type {
+    margin: 0.4rem 0.5rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pk-type-list {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+}
+
+.pk-type {
+    margin: 0 0.25rem;
+    display: flex;
+    align-items: center;
+    padding: 5px 0.5rem;
+    border-radius: 4px;
+    background-color: #286578;
+}
+
+.pk-card-type label {
+    margin: 0;
+}
+
+label.pk-label-basic {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.pk-weak-list {
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.pk-evolution {
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pk-evolution-heading {
+    font-size: 1.5rem;
+}
+
+.pk-evolutions-list {
+    margin: 0 0.5rem;
+    color: var(--text-color);
+}
